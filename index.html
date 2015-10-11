@@ -5,11 +5,18 @@
 				<h2> Enter into the Catclicker contest! </h2>
 			</div>
 			<div class="body">
-				<div class ="col2">
-				</div>
-				<div class ="col8">
-					<img src = "resources/cute_cat_1.jpg" height = "400" width = " 500" onclick = 'myFunc()'></img>
+				<div class = "row">
+					<div class ="col2">
+					</div>
+						<div class ="col8">
+							<img src = "resources/cute_cat_1.jpg" height = "400" width = " 500" onclick = 'myFunc()'></img>
 
+						</div>
+				</div>
+				<div class ="row">
+					<div class = "col8">
+						<img src = "resources/cute_cat_2.jpg" height = "400" width = " 500" onclick = 'myFunc()'></img>
+					</div>
 				</div>
 				<div class = "col2">
 					Number of Clicks:
@@ -19,6 +26,7 @@
 			</div>
 				<script>
 					var count = 0;
+					var catNames = ["Leslie", "Jessica"];
 					function myFunc(){
 						count = count + 1;
 						document.getElementById("outputCount").innerHTML = count;
