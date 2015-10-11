@@ -1,0 +1,31 @@
+<html>
+	<head><title>Cat Clicker</title></head>
+		<body>
+			<div class="header">
+				<h2> Enter into the Catclicker contest! </h2>
+			</div>
+			<div class="body">
+				<div class ="col2">
+				</div>
+				<div class ="col8">
+					<img src = "resources/cute_cat_1.jpg" height = "400" width = " 500" onclick = 'myFunc()'></img>
+
+				</div>
+				<div class = "col2">
+					Number of Clicks:
+					<p id = "outputCount"></p>
+					<b></b>
+				</div>
+			</div>
+				<script>
+					var count = 0;
+					function myFunc(){
+						count = count + 1;
+						document.getElementById("outputCount").innerHTML = count;
+					}
+					
+			
+				</script>
+		</body>
+
+</html>
